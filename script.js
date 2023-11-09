@@ -14,6 +14,10 @@ const loadedImageUrls = new Set(); // To store the loaded image URLs
 const topics = [
 	"Neurodivergent",
 	"Environment",
+	"decay",
+	"quantum",
+	"dissapearance",
+	"ghost",
 	"Technology",
 	"EventDriven",
 	"Permacomputing",
