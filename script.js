@@ -37,7 +37,6 @@ const topics = [
 	"nature", 
 	"art", 
 	"architecture", 
-	"shibari", 
 	"mechanical", 
 	"cyborg", 
 	"pollock", 
