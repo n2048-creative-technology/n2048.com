@@ -66,7 +66,7 @@ function loadRandomImage() {
     const randomImageIndex = getRandomInt(1, numImages);
 
     const randomTopic = getRandomTopic();
-    const flickrApiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${randomTopic}&content_type=1&media=photos&per_page=${numImages}&page=${imageCount + 1}&format=json&nojsoncallback=1&sort=relevance`;
+    const flickrApiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&text=${randomTopic}&content_type=1&media=photos&per_page=${numImages}&page=${imageCount + 1}&format=json&nojsoncallback=1&sort=random`;
 
 //    const randomTopic = topics.join(',');
 //    const flickrApiUrl = `https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${apiKey}&tags=${randomTopic}&tag_mode=all&content_type=1&media=photos&per_page=1&page=${imageCount + 1}&format=json&nojsoncallback=1&sort=relevance`;
