@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-container a {
+    position: absolute;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    opacity: 0.7; /* Add transparency to the images */
+}
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            animation: overlayAnimation .3s forwards 3s;
+	    z-index:2;
+        }
+
+        #text-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+	    margin-top: 10px;
+        }
+
+        #text {
+	    z-index:1;
+            text-transform: uppercase;
+            font-family: sans-serif;
+            /* The first number is the duration, the last number is the delay*/
+            animation: fontAnimation 3s ease forwards 0s;
+        }
+ #n {
+/*
+            display:block;
+            animation: nAnimation 3s ease forwards 3.1s;
+*/
+        }
+
+@keyframes fontAnimation {
+            0% {
+                font-size: 500vw;
+                color: black;
+                letter-spacing: 0.2em;
+                margin-left: 20.0em
+            }
+            100% {
+                font-size: 10vw;
+                color: white;
+                letter-spacing: 0.9em;
+                margin-left: 1.1em
+            }
+        }
+        @keyframes nAnimation {
+            0% {
+                -webkit-transform: rotate(0deg);
+                -moz-transform: rotate(0deg);
+                transform: rotate(0deg);
+            }
+            100% {
+                -webkit-transform: rotate(25deg);
+                -moz-transform: rotate(25deg);
+                transform: rotate(25deg);
+            }
+        }
+
+        @keyframes overlayAnimation {
+            0% {
+                background-color: rgba(255, 255,255, .8);
+            }
+            100% {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
