@@ -4,7 +4,7 @@ const container = document.getElementById("image-container");
 const currentDate = new Date();
 const currentYear = currentDate.getFullYear();
 
-const numImages = 80; // currentYear - 1980; // Number of images to load
+const numImages = 100; // currentYear - 1980; // Number of images to load
 let imageCount = 0; // To keep track of the loaded images
 let loadedImages = 0; // To keep track of the images that have fully loaded
 const loadedImageUrls = new Set(); // To store the loaded image URLs
