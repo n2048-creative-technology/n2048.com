@@ -11,7 +11,40 @@ const loadedImageUrls = new Set(); // To store the loaded image URLs
 
 
 
-const topics = ["nature", "art", "architecture", "technology", "robotic", "shibari", "mechanical", "cyborg", "pollock", "space", "physics", "industrial", "abstract", "octopus"];
+const topics = [
+	"Environment",
+	"Technology",
+	"EventDriven",
+	"Permacomputing",
+	"Ecology",
+	"Coding",
+	"Architecture",
+	"System",
+	"Entanglement",
+	"Sustainability",
+	"Cloud",
+	"Automation",
+	"Virtualization",
+	"Robotics",
+	"Fork",
+	"Version",
+	"Distributed",
+	"nature", 
+	"art", 
+	"architecture", 
+	"shibari", 
+	"mechanical", 
+	"cyborg", 
+	"pollock", 
+	"space", 
+	"physics", 
+	"industrial", 
+	"abstract", 
+	"octopus",
+	"biology",
+	"mirroring",
+	"masking",
+];
 
 function getRandomTopic() {
     const randomIndex = getRandomInt(0, topics.length - 1);
